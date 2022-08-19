@@ -1,0 +1,6 @@
+{
+    "bot_token" : "INSERT_YOUR_TOKEN_HERE",
+    "webhook_url" : "INSERT_YOUR_WEBHOOK_URL_HERE",
+    "feature_request_channel_id" : 1234567890,
+    "guild_id" : 1234567890
+}
