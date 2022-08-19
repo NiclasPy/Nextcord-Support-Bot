@@ -39,8 +39,8 @@ with open("config.json", "r") as f:                # Getting everything else nee
     config = json.load(f)
     bot_token = str(config["bot_token"])
     webhook_url = str(config["webhook_url"])
-    feature_request_channel_id = data["feature_request_channel_id"]
-    guild_id = data["guild_id"]
+    feature_request_channel_id = config["feature_request_channel_id"]
+    guild_id = config["guild_id"]
 
 
 # on_ready Event #
