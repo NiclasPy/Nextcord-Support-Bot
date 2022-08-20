@@ -99,7 +99,7 @@ class FeatureRequestModal(nextcord.ui.Modal):
             webhook = DiscordWebhook(url=webhook_url, rate_limit_retry=True, content = f"**Feature Request: **{content}", username=f"{interaction.user}", avatar_url = "https://niclas.wants-to.party/discord-avatar.png")
         response = webhook.execute()
 
-@client.slash_command(name = "request", description = "Feel free to tell us your requests!", guild_ids = [1009562516105461780])
+@client.slash_command(name = "request", description = "Feel free to tell us your requests!", guild_ids = [guild_id])
 async def featurerequest(interaction : Interaction):
     modal = FeatureRequestModal()
     await interaction.response.send_modal(modal)
